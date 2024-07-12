@@ -7,7 +7,8 @@ pipeline {
         stage('Run CoveragePython') {
             steps {
                 script {
-                    call1()
+                    // Call CoveragePython function directly
+                    callCoveragePython()
                 }
             }
         }
@@ -19,12 +20,6 @@ pipeline {
                 }
             }
         }
-        stage('Hello World') {
-            steps {
-                script {
-                    // Additional steps if needed
-                }
-            }
-        }
+        
     }
 }
