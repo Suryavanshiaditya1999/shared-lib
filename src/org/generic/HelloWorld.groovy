@@ -1,3 +1,4 @@
+// shared-lib/src/org/generic/HelloWorld.groovy
 package org.generic
 
 class HelloWorld {
