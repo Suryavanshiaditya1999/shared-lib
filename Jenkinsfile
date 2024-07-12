@@ -1,4 +1,5 @@
-// shared-lib/Jenkinsfile
+@Library('shared-library') _
+
 pipeline {
     agent any
     
@@ -7,7 +8,7 @@ pipeline {
             steps {
                 script {
                     // Load the shared library
-                    @Library('shared-lib') _
+                   
                     
                     // Call the commongeneric function
                     template.commongeneric.call(this)
