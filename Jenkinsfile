@@ -10,7 +10,7 @@ pipeline {
                     @Library('shared-lib') _
                     
                     // Call the commongeneric function
-                    template.CommonGeneric.call(this)
+                    template.commongeneric.call(this)
                 }
             }
         }
