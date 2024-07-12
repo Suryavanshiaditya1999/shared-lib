@@ -1,6 +1,6 @@
 @Library('shared_library') _
 
-import template.commongeneric
+import template.CommonGeneric
 
 pipeline {
     agent any
