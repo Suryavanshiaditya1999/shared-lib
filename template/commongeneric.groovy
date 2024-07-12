@@ -1,7 +1,10 @@
+// shared-lib/template/commongeneric.groovy
 package template
 
 import org.generic.HelloWorld
 
-def call(script) {
-    HelloWorld.sayHello(script)
+class CommonGeneric {
+    static void call(script) {
+        HelloWorld.sayHello(script)
+    }
 }
