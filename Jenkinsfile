@@ -1,6 +1,4 @@
-@Library('shared_library') _
-
-import template.CommonGeneric
+@Library('shared_lib') _
 
 pipeline {
     agent any
@@ -9,8 +7,7 @@ pipeline {
         stage('Hello World') {
             steps {
                 script {
-                    def commonGeneric = new CommonGeneric()
-                    commonGeneric.call(this)
+                   commongeneric()
                 }
             }
         }

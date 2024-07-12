@@ -1,10 +1,7 @@
-// shared-lib/template/commongeneric.groovy
-package template
+import org.python.CoveragePython
+import org.python.Coverage2
 
-import org.generic.HelloWorld
-
-class CommonGeneric {
-    static void call(script) {
-        HelloWorld.sayHello(script)
-    }
+def call() {
+     new CoveragePython().call()
+     new Coverage2.call()
 }
