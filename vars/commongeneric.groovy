@@ -8,5 +8,5 @@ def callCoveragePython() {
 }
 
 def callCoverage2() {
-    new Coverage2().call()
+    new Dependency().call()
 }
