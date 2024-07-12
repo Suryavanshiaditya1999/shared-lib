@@ -11,7 +11,7 @@ pipeline {
                    
                     
                     // Call the commongeneric function
-                    template.commongeneric.call(this)
+                    template.CommonGeneric.call(this)
                 }
             }
         }
