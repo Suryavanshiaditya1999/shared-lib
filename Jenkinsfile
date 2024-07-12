@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script {
                     // Call CoveragePython function directly
-                    callCoveragePython()
+                    commongeneric.callCoveragePython()
                 }
             }
         }
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     // Call Coverage2 function directly
-                    callCoverage2()
+                    commongeneric.callCoverage2()
                 }
             }
         }
