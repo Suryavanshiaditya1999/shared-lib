@@ -7,8 +7,7 @@ pipeline {
         stage('Run CoveragePython') {
             steps {
                 script {
-                    // Call CoveragePython function directly
-                    callCoveragePython()
+                    call1()
                 }
             }
         }
