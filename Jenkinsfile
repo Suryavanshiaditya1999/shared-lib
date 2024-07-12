@@ -7,11 +7,10 @@ pipeline {
         stage('Hello World') {
             steps {
                 script {
-                    // Load the shared library
-                   
+                    def commonGeneric = load "template/commongeneric.groovy"
                     
-                    // Call the commongeneric function
-                    template.CommonGeneric.call(this)
+                    // Call the call method of CommonGeneric
+                    commonGeneric.call(this)
                 }
             }
         }
