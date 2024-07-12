@@ -7,7 +7,6 @@ pipeline {
         stage('Run CoveragePython') {
             steps {
                 script {
-                    // Call CoveragePython function directly
                     commongeneric.callCoveragePython()
                 }
             }
@@ -15,7 +14,6 @@ pipeline {
         stage('Run Coverage2') {
             steps {
                 script {
-                    // Call Coverage2 function directly
                     commongeneric.callCoverage2()
                 }
             }
