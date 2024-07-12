@@ -9,10 +9,7 @@ pipeline {
         stage('Hello World') {
             steps {
                 script {
-                    // Instantiate CommonGeneric class
                     def commonGeneric = new CommonGeneric()
-                    
-                    // Call the call method of CommonGeneric
                     commonGeneric.call(this)
                 }
             }
