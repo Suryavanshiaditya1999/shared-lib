@@ -1,7 +1,7 @@
 // package org.python
 
 import org.python.CoveragePython
-import org.python.Coverage2
+import org.python.Dependency
 
 def callCoveragePython() {
     new CoveragePython().call()
